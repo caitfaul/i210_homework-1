@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header>
+      <h2>My Website</h2>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+      </nav>
+    </header>
+    <main>
+      <h1>Contact Us</h1>
+      <form action="formPost.html" method="get">
+        <!--Contact Information-->
+        <fieldset>
+          <legend>Contact Information</legend>
+          <label for="fullname">Full Name</label>
+          <input type="text" id="fullname" name="fullname" />
+          <br /><br />
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+          <br /><br />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" pattern="[0-9]{10}" placeholder="Enter 10-digit number" required />
+          <br /><br />
+        </fieldset>
+
+        <br />
+        <!--Other Info-->
+        <fieldset>
+          <legend>Other Information</legend>
+          <p>Are you a student?</p>
+          <label>
+            <input type="radio" name="student" value="yes" checked />Yes
+          </label>
+          <label> <input type="radio" name="student" value="no" />No </label>
+          <br /><br />
+          <label for="year">Student Year:</label>
+          <select name="year" id="year">
+            <option value="freshman">Freshman</option>
+            <option value="sophomore">Sophomore</option>
+            <option value="junior">Junior</option>
+            <option value="senior">Senior</option>
+          </select>
+          <br /><br />
+          <label for="enjoyment">Major Enjoyment </label>
+          <br />
+          <input type="range" id="enjoyment" name="enjoyment" min="1" max="5" />
+          <br /><br />
+          <label for="comments">Comments</label>
+          <br />
+          <textarea id="comments" name="comments" rows="4" cols="40"></textarea>
+          <br /><br />
+        </fieldset>
+        <br />
+        <input type="submit" value="Submit Form" />
+      </form>
+    </main>
+    <footer>
+      <p>&copy; Caitlynn Faulkner 2026</p>
+    </footer>
+  </body>
+</html>
